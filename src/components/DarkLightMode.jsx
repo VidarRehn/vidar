@@ -15,9 +15,9 @@ const ToggleSwitch = () => {
     return (
         <Container onClick={(e) => changeMode(e)} >
             {darkMode ? (
-                <MoonIcon size={24} color={colors.light.background} />
+                <MoonIcon size={16} color={colors.background} />
             ) : (
-                <SunIcon size={24} color={colors.light.background} />
+                <SunIcon size={16} color={colors.background} />
             )}
         </Container>
     )
@@ -25,17 +25,18 @@ const ToggleSwitch = () => {
 
 const Container = styled.button`
     position: absolute;
-    background-color: black;
+    background-color: ${colors.main};
     top: 32px;
     right: 32px;
     height: 32px;
     width: 32px;
     border-radius: 50%;
-    padding: 4px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border: none;
 
     svg {
         pointer-events: none;

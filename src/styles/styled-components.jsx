@@ -11,6 +11,8 @@ export const AppContainer = styled.main`
   justify-content: center;
   align-items: center;
   gap: 24px;
+  background-color: ${colors.background};
+  color: ${colors.main};
 `
 
 export const Title = styled.h1`
@@ -31,7 +33,7 @@ export const LogosContainer = styled.section`
 
   svg {
     height: clamp(48px, 6vw, 64px);
-    fill: ${colors.light.main}
+    fill: ${colors.main}
   }
 `
 
@@ -41,7 +43,7 @@ export const DarkOverlay = styled.div`
   width: 100%;
   top: 0;
   z-index: 100;
-  background-color: ${colors.light.background};
+  background-color: ${colors.background};
   mix-blend-mode: difference;
   pointer-events: none;
   transform: translateY(-100%);

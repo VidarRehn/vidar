@@ -1,13 +1,7 @@
 
 export const colors = {
-    light: {
-        background: '#ebebeb',
-        main: '#262626' 
-    },
-    dark: {
-        background: '#262626',
-        main: '#fcfcfc'
-    }
+    background: '#e3e3e3',
+    main: '#323232' 
 }
 
 export const fonts = {
