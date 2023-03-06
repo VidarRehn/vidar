@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 import { SunIcon, MoonIcon } from '../assets/icons'
 import AppContext from '../context/AppContext'
 import { useContext } from 'react'
+import { colors } from '../styles/partials'
 
 const ToggleSwitch = () => {
 
@@ -14,9 +15,9 @@ const ToggleSwitch = () => {
     return (
         <Container onClick={(e) => changeMode(e)} >
             {darkMode ? (
-                <MoonIcon size={24} color={'#ffc400'} />
+                <MoonIcon size={24} color={colors.light.background} />
             ) : (
-                <SunIcon size={24} color={'#ffc400'} />
+                <SunIcon size={24} color={colors.light.background} />
             )}
         </Container>
     )
