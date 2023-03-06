@@ -9,7 +9,14 @@ const ToggleSwitch = () => {
     const {darkMode, setDarkMode} = useContext(AppContext)
 
     const changeMode = (e) => {
-        setDarkMode(!darkMode)
+        if (darkMode){
+            localStorage.setItem('theme', 'light')
+            setDarkMode(false)
+        } else {
+            localStorage.setItem('theme', 'dark')
+            setDarkMode(true)
+        }
+        setDarkMode(!darkMode)        
     }
 
     return (
@@ -32,6 +39,7 @@ const Container = styled.button`
     width: 32px;
     border-radius: 50%;
     padding: 8px;
+    z-index: 50;
     display: flex;
     align-items: center;
     justify-content: center;
