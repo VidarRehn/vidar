@@ -39,7 +39,6 @@ const Container = styled.button`
     width: 32px;
     border-radius: 50%;
     padding: 8px;
-    z-index: 50;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -16,13 +16,11 @@ export const AppContainer = styled.main`
 `
 export const Title = styled.h1`
     font-family: 'Chewy', cursive;
-    font-size: clamp(36px, 10vw, 80px);
-    z-index: 50;
+    font-size: clamp(40px, 10vw, 80px);
     pointer-events: none;
 `
 export const Intro = styled.p`
     font-size: clamp(14px, 3vw, 32px);
-    z-index: 50;
 `
 export const LogosContainer = styled.section`
   max-width: 840px;
@@ -31,7 +29,6 @@ export const LogosContainer = styled.section`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  z-index: 50;
   gap: 12px;
 
   svg {
@@ -60,7 +57,6 @@ export const PaintOverlay = styled.div`
   height: 100%;
   width: 100%;
   top: 0;
-  z-index: 0;
   overflow: hidden;
 
   span {

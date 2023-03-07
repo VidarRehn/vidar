@@ -22,9 +22,9 @@ function App() {
     <AppContext.Provider value={{darkMode, setDarkMode}}>
     <AppContainer>
       <DarkLightModeButton />
-      <ColorChanger />
+      {/* <ColorChanger /> */}
       <Title>hi, I'm vidar.</Title>
-      <Intro>a web developer. below is my toolbox</Intro>
+      <Intro>a web developer & designer. below is my toolbox.</Intro>
       <Tools />
       <DarkOverlay className={darkMode && 'dark-mode'} />
     </AppContainer>
