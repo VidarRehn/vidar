@@ -24,6 +24,7 @@ import Miro from '../assets/logos/Miro'
 import Github from '../assets/logos/Github'
 import Linear from '../assets/logos/Linear'
 import Procreate from '../assets/logos/Procreate'
+import Postman from '../assets/logos/Postman'
 
 const Tools = () => {
 
@@ -45,6 +46,7 @@ const Tools = () => {
             <Strapi />
             <Miro />
             <Heroku />
+            <Postman />
             <Three />
             <Github />
             <VsCode />

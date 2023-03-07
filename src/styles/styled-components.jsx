@@ -37,12 +37,13 @@ export const LogosContainer = styled.section`
   }
 `
 export const SeeMoreButton = styled.button`
+  margin-top: 32px;
   background-color: ${colors.main};
   border: none;
   color: ${colors.background};
   padding: 16px 32px;
   border-radius: 16px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  font-size: 20px;
 `
 export const DarkOverlay = styled.div`
   position: absolute;

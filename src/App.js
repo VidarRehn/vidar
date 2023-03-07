@@ -1,8 +1,7 @@
 import DarkLightModeButton from './components/DarkLightMode';
-import ColorChanger from './components/ColorChanger'
-import Tools from './components/Tools';
+import IntroAndTools from './pages/IntroAndTools';
 import AppContext from './context/AppContext';
-import { AppContainer, Title, Intro, SeeMoreButton, DarkOverlay } from './styles/styled-components'
+import { AppContainer, DarkOverlay } from './styles/styled-components'
 import { useState, useEffect } from 'react'
 import Loader from './components/Loader';
 
@@ -25,11 +24,7 @@ function App() {
       <Loader />
       <AppContainer>
         <DarkLightModeButton />
-        {/* <ColorChanger /> */}
-        <Title>hi, I'm vidar.</Title>
-        <Intro>a web developer & designer. below is my evergrowing toolbox.</Intro>
-        <Tools />
-        {/* <SeeMoreButton>see more</SeeMoreButton> */}
+        <IntroAndTools />
         <DarkOverlay className={darkMode && 'dark-mode'} />
       </AppContainer>
     </AppContext.Provider>

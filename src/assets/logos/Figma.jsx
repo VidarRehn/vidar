@@ -13,6 +13,7 @@ const Figma = ({size}) => {
 
     return (
     <svg height={size} viewBox="0 0 73 110" onMouseEnter={() => setActualColor(true)} onMouseLeave={(() => handleMouseLeave())} style={{zIndex: actualColor ? '150' : '0'}}>
+        <title>Figma</title>        
         {actualColor ? (
             <>
             <path d="M18 110C27.936 110 36 101.712 36 91.5V73H18C8.064 73 0 81.288 0 91.5C0 101.712 8.064 110 18 110Z" fill="#0ACF83"/>

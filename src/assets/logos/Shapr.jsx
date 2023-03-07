@@ -13,6 +13,7 @@ const Shapr = ({size}) => {
 
     return (
     <svg height={size} viewBox={actualColor ? "0 0 180 194" : "0 0 89 96"} onMouseEnter={() => setActualColor(true)} onMouseLeave={(() => handleMouseLeave())} style={{zIndex: actualColor ? '150' : '0'}}>
+        <title>Shapr3d</title>
         {actualColor ? (
             <>
             <path d="M47 13L133 80V130L47 63V13Z" fill="#00A7FF"/>

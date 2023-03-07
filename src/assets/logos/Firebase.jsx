@@ -13,6 +13,7 @@ const Firebase = ({size}) => {
 
     return (
     <svg height={size} viewBox="0 0 8 11" onMouseEnter={() => setActualColor(true)} onMouseLeave={(() => handleMouseLeave())} style={{zIndex: actualColor ? '150' : '0'}}>
+        <title>Firebase</title>
         {actualColor ? (
             <>
             <path d="M0 8.47479L0.0637498 8.38592L3.07125 2.68067L3.07762 2.62029L1.752 0.130295C1.72773 0.0847609 1.68976 0.0480109 1.64346 0.0252436C1.59715 0.00247634 1.54487 -0.00515543 1.49399 0.00342796C1.44311 0.0120113 1.39622 0.0363753 1.35995 0.073073C1.32368 0.109771 1.29986 0.156944 1.29187 0.20792L0 8.47479Z" fill="#FFC24A"/>

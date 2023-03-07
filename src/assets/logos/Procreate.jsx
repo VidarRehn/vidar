@@ -13,6 +13,7 @@ const Procreate = ({size}) => {
 
     return (
     <svg height={size} viewBox="0 0 56 56" onMouseEnter={() => setActualColor(true)} onMouseLeave={(() => handleMouseLeave())} style={{zIndex: actualColor ? '150' : '0'}}>
+        <title>Procreate</title>
         {actualColor ? (
             <>
             <path d="M15.7698 30.5874C11.2835 34.897 10.5481 44.4516 11.2113 45C11.7735 44.7258 12.42 38.882 18.3381 35.5877C25.7357 31.4698 35.7715 33.4839 40.9051 27.0578C47.1021 19.3003 44.5703 11.2742 44.0366 11C43.6508 11 42.1329 17.5537 36.6019 21.1751C29.9471 25.5323 24.7427 21.9677 15.7698 30.5874Z" fill="url(#paint0_linear_41_626)"/>

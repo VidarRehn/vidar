@@ -13,6 +13,7 @@ const Charts = ({size}) => {
 
     return (
     <svg height={size} viewBox={actualColor ? "0 0 30 35" : "0 0 60 70"} onMouseEnter={() => setActualColor(true)} onMouseLeave={(() => handleMouseLeave())} style={{zIndex: actualColor ? '150' : '0'}}>
+        <title>Charts JS</title>
         {actualColor ? (
             <>
             <path d="M29 17.5952C24.2455 17.6916 25.2358 20.8003 21.885 21.5865C18.4811 22.3852 17.9437 13 14.5406 13C11.1371 13 10.3832 22.1167 6.12158 28.3754L6 28.5525L15.1369 34L29 25.7341V17.5952Z" fill="#36A2EB"/>

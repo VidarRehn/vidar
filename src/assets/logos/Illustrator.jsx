@@ -13,6 +13,7 @@ const Illustrator = ({size}) => {
 
     return (
     <svg height={size} viewBox="0 0 43 43" onMouseEnter={() => setActualColor(true)} onMouseLeave={(() => handleMouseLeave())} style={{zIndex: actualColor ? '150' : '0'}}>
+        <title>Adobe Illustrator</title>
         {actualColor ? (
             <>
             <path d="M32.9219 0H10.0781C4.51213 0 0 4.51213 0 10.0781V32.9219C0 38.4879 4.51213 43 10.0781 43H32.9219C38.4879 43 43 38.4879 43 32.9219V10.0781C43 4.51213 38.4879 0 32.9219 0Z" fill="#330000"/>
