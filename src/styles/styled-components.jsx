@@ -24,7 +24,7 @@ export const Intro = styled.p`
 `
 export const LogosContainer = styled.section`
   max-width: 840px;
-  margin-top: 24px;
+  margin: 24px;
   display: flex;
   justify-content: center;
   align-items: center;

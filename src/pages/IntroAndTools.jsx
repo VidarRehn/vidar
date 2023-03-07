@@ -8,7 +8,7 @@ const IntroAndTools = () => {
         <Title>hi, I'm vidar.</Title>
         <Intro>a web developer & designer. below is my toolbox.</Intro>
         <Tools />
-        <SeeMoreButton>see more</SeeMoreButton>
+        {/* <SeeMoreButton>see more</SeeMoreButton> */}
         </>
     )
 }

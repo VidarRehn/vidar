@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { SunIcon, MoonIcon } from '../assets/icons'
 import AppContext from '../context/AppContext'
 import { useContext } from 'react'
@@ -16,11 +16,28 @@ const ToggleSwitch = () => {
             localStorage.setItem('theme', 'dark')
             setDarkMode(true)
         }
+        e.target.style.zIndex = 'auto'
+        e.target.style.backgroundColor = colors.main
+        e.target.firstChild.firstChild.style.fill = colors.background
         setDarkMode(!darkMode)        
     }
 
+    const handleHover = (e) => {
+        e.target.style.zIndex = '200'
+        e.target.style.backgroundColor = e.target.firstChild.dataset.color
+        e.target.firstChild.firstChild.style.fill = colors.main
+    }
+
+    const handleMouseLeave = (e) => {
+        setTimeout(() => {
+            e.target.style.zIndex = 'auto'
+            e.target.style.backgroundColor = colors.main
+            e.target.firstChild.firstChild.style.fill = colors.background
+        }, 300)
+    }
+
     return (
-        <Container onClick={(e) => changeMode(e)} >
+        <Container onClick={(e) => changeMode(e)} onMouseEnter={(e) => handleHover(e)} onMouseLeave={(e) => handleMouseLeave(e)} >
             {darkMode ? (
                 <MoonIcon size={16} color={colors.background} />
             ) : (
