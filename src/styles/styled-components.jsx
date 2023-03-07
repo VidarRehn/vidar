@@ -20,7 +20,7 @@ export const Title = styled.h1`
     pointer-events: none;
 `
 export const Intro = styled.p`
-    font-size: clamp(14px, 3vw, 32px);
+    font-size: clamp(14px, 3vw, 28px);
 `
 export const LogosContainer = styled.section`
   max-width: 840px;
@@ -36,14 +36,22 @@ export const LogosContainer = styled.section`
     fill: ${colors.main}
   }
 `
+export const SeeMoreButton = styled.button`
+  background-color: ${colors.main};
+  border: none;
+  color: ${colors.background};
+  padding: 16px 32px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+`
 export const DarkOverlay = styled.div`
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   z-index: 100;
-  background-color: ${colors.background};
-  mix-blend-mode: difference;
+  background-color: white;
+  mix-blend-mode: exclusion;
   pointer-events: none;
   transform: translateY(-100%);
   transition: 2s ease;

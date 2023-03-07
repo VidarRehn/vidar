@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+button, a {
+    cursor: pointer;
+}
+
 .custom-cursor {
     cursor: url("../assets/paintbrush.svg"), auto; 
 }
