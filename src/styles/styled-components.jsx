@@ -1,4 +1,4 @@
-import styled, {css, keyframes} from 'styled-components'
+import styled from 'styled-components'
 import { colors } from './partials'
 
 export const AppContainer = styled.main`
@@ -54,7 +54,7 @@ export const DarkOverlay = styled.div`
   mix-blend-mode: exclusion;
   pointer-events: none;
   transform: translateY(-100%);
-  transition: 2s ease;
+  transition: 1s ease;
 
   &.dark-mode {
     transform: translateY(0)

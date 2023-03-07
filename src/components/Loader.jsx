@@ -1,6 +1,6 @@
 import { createPortal } from "react-dom"
 import styled, { keyframes } from "styled-components"
-import { useContext, useEffect, useState, useRef } from "react"
+import { useContext } from "react"
 import AppContext from "../context/AppContext"
 import { colors } from "../styles/partials"
 
@@ -21,7 +21,7 @@ const Loader = () => {
 }
 
 const animation = keyframes`
-    0% {stroke-dasharray: 22000 23726};
+    0% {stroke-dasharray: 21000 23726};
     100% {stroke-dasharray: 50 23726 }
 `
 const Container = styled.div`
@@ -40,7 +40,7 @@ const Container = styled.div`
 const Path = styled.path`
     animation-name: ${animation};
     animation-iteration-count: 1;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-timing-function: linear;
 `
 
