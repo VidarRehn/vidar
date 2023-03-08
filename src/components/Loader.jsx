@@ -41,6 +41,7 @@ const Container = styled.div`
 
     svg {
         width: 110%;
+        height: 110%;
     }
 `
 const Path = styled.path`

@@ -8,7 +8,7 @@ import Loader from './components/Loader';
 function App() {
 
   const [darkMode, setDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(window.innerWidth > 800)
 
   useEffect(() => {
     let theme = localStorage.getItem('theme')
@@ -21,7 +21,7 @@ function App() {
   
   return (
     <AppContext.Provider value={{darkMode, setDarkMode, loading, setLoading}}>
-      {/* <Loader /> */}
+      <Loader />
       <AppContainer>
         <DarkLightModeButton />
         <IntroAndTools />
