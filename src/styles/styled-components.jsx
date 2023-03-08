@@ -16,12 +16,12 @@ export const AppContainer = styled.main`
 `
 export const Title = styled.h1`
     font-family: 'Chewy', cursive;
-    font-size: clamp(40px, 10vw, 80px);
+    font-size: clamp(44px, 10vw, 80px);
     pointer-events: none;
-    margin-top: 60px;
+    margin-top: 24px;
 `
 export const Intro = styled.p`
-    font-size: clamp(14px, 3vw, 28px);
+    font-size: clamp(18px, 3vw, 28px);
     line-height: 140%;
 `
 export const LogosContainer = styled.section`
