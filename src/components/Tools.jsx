@@ -25,6 +25,8 @@ import Github from '../assets/logos/Github'
 import Linear from '../assets/logos/Linear'
 import Procreate from '../assets/logos/Procreate'
 import Postman from '../assets/logos/Postman'
+import Jest from '../assets/logos/Jest'
+import Axios from '../assets/logos/Axios'
 
 const Tools = () => {
 
@@ -42,6 +44,8 @@ const Tools = () => {
             <Firebase />
             <Netlify />
             <Trello />
+            <Axios />
+            <Jest />
             <Charts />
             <Strapi />
             <Miro />
