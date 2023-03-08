@@ -3,7 +3,7 @@ import { colors } from './partials'
 
 export const AppContainer = styled.main`
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   padding: 32px;
   display: flex;
@@ -18,9 +18,11 @@ export const Title = styled.h1`
     font-family: 'Chewy', cursive;
     font-size: clamp(40px, 10vw, 80px);
     pointer-events: none;
+    margin-top: 60px;
 `
 export const Intro = styled.p`
     font-size: clamp(14px, 3vw, 28px);
+    line-height: 140%;
 `
 export const LogosContainer = styled.section`
   max-width: 840px;
@@ -32,7 +34,7 @@ export const LogosContainer = styled.section`
   gap: 12px;
 
   svg {
-    height: clamp(48px, 6vw, 64px);
+    height: clamp(40px, 6vw, 64px);
     fill: ${colors.main}
   }
 `

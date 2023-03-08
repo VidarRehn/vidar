@@ -21,7 +21,7 @@ function App() {
   
   return (
     <AppContext.Provider value={{darkMode, setDarkMode, loading, setLoading}}>
-      <Loader />
+      {/* <Loader /> */}
       <AppContainer>
         <DarkLightModeButton />
         <IntroAndTools />
