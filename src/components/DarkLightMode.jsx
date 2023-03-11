@@ -38,7 +38,7 @@ const ToggleSwitch = () => {
 
     return (
         <Container title={darkMode ? 'Change to light mode' : 'Change to dark mode'} onClick={(e) => changeMode(e)} onMouseEnter={(e) => handleHover(e)} onMouseLeave={(e) => handleMouseLeave(e)} >
-            {darkMode ? (
+            {!darkMode ? (
                 <MoonIcon size={16} color={colors.background} />
             ) : (
                 <SunIcon size={16} color={colors.background} />
